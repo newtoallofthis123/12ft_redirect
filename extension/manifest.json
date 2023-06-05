@@ -1,0 +1,28 @@
+{
+    "manifest_version": 3,
+    "name": "12ft.io Redirect",
+    "version": "1.0",
+    "author": "NoobScience",
+    "homepage_url": "https://12ft.noobscience.rocks",
+    "short_name": "12ft.io Redirect",
+    "description": "A Simple Extension that helps let's you quickly read your current tab's URL and redirect it to 12ft.io",
+    "background": {
+        "service_worker": "background.js"
+    },
+    "icons": {
+        "16": "icons/logo16.png",
+        "32": "icons/logo32.png",
+        "128": "icons/logo128.png",
+        "512": "icons/logo512.png"
+    },
+    "action": {
+        "default_title": "12ft.io Redirect",
+        "default_icon": {
+            "16": "icons/logo16.png",
+            "32": "icons/logo32.png",
+            "128": "icons/logo128.png",
+            "512": "icons/logo512.png"
+        }
+    },
+    "permissions": ["tabs"]
+}

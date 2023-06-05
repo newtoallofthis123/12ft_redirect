@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description">
+		<meta name="viewport" content="width=device-width" />
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Fira+Sans:wght@400;700&family=Poppins&family=Space+Grotesk&family=Archivo+Black&display=swap" rel="stylesheet">
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+		/>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="master.css" />
+		<title>12ft Redirector</title>
+	</head>
+	<nav class="border-b-2 border-black">
+		<div class="max-w-7xl mx-5 py-1 my-1 sm:px-6 lg:px-8">
+			<div class="flex items-center justify-between h-16">
+			<div class="flex items-center">
+				<div class="flex-shrink-0">
+					<img class="mb-2 mr-3 h-10 w-10" src="logo.webp" alt="Logo">
+					<!-- <i class="bi bi-lightning-fill text-3xl mr-3"></i> -->
+				</div>
+				<div class="flex-shrink-0">
+				<h1 class="nav-title text-black pb-2 mr-10 text-3xl font-bold">
+					<a href="/">
+						12ft Redirector
+					</a>
+				</h1>
+				</div>
+				<div class="hidden md:block ml-10 md:space-x-10">
+					<a href="#why" class="text-gray-700 hover:text-black px-3 py-2 rounded-md text-base font-semibold">Why This?</a>
+                    <a href="https://github.com/newtoallofthis123/12ft_redirect" class="text-gray-700 hover:text-black px-3 py-2 rounded-md text-base font-semibold">GitHub</a>
+					<a href="https://noobscience.rocks" class="text-gray-700 hover:text-black px-3 py-2 rounded-md text-base font-semibold">The Author</a>
+				</div>
+			</div>
+			<div class="hidden md:flex md:items-center mr-5 md:space-x-10">
+				<button class="py-2 rounded-lg">
+					<a href="https://license.noobscience.rocks" class="text-black px-2 py-4 text-base font-medium">
+						MIT License <i class="bi bi-arrow-right"></i> <i class="bi bi-globe"></i>
+					</a>
+				</button>
+				<button class="animate__animated animate__pulse animate__slow animate__infinite bg-black p-2 rounded-lg">
+					<a href="https://github.com/newtoallofthis123/12ft_redirect/releases" class="text-gray-200 hover:text-white px-2 py-4 rounded-md text-base font-medium">Download <i class="bi bi-github text-base font-medium px-2"></i></a>
+				</button>
+			</div>
+			<div class="mr-2 flex md:hidden">
+				<button id="navbar-toggle" type="button" class="bg-gray-800 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
+				<span class="sr-only">Open main menu</span>
+				<svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+				</svg>
+				</button>
+			</div>
+			</div>
+		</div>
+		<div id="navbar-menu" class="hidden md:hidden">
+			<div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+			<a href="#" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-lg font-medium">Home</a>
+			<a href="#" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-lg font-medium">About</a>
+			<a href="#" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-lg font-medium">Services</a>
+			<a href="#" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-lg font-medium">Contact</a>
+			</div>
+		</div>
+	</nav>
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+		var navbarToggle = document.getElementById("navbar-toggle");
+		var navbarMenu = document.getElementById("navbar-menu");
+		navbarToggle.addEventListener("click", function() {
+			navbarMenu.classList.toggle("hidden");
+			});
+		});
+	</script>
+	<body>
+		<div class="flex flex-col md:flex-row py-8">
+			<div class="w-full md:w-1/2 md:my-10">
+                <h1 class="text-4xl font-bold text-center p-4">
+                    Getting you close to the
+                </h1>
+                <h1 class="text-6xl font-bold text-center p-12">
+                    <span class="bg-green-200">12feet</span> Ladder
+                </h1>
+                <h2 class="text-center text-xl p-4">
+                    A simple chrome extension to redirect you to the 12ft ladder
+                </h2>
+                <div class="text-center p-5">
+                    <button class="bg-black text-lg text-white rounded-md p-2 text-center">
+                        <a href="#why">
+                            Know More
+                        </a>
+                    </button>
+                </div>
+            </div>
+            <div class="w-full md:w-1/2 md:m;-4">
+                <img src="imgs/12ft.png" alt="12ft ladder">
+                <p class="text-center p-3">
+                    <a class="underline" href="https://12ft.io">
+                        12ft.io
+                    </a> is a popular website for unlocking paywalled articles
+                </p>
+            </div>
+		</div>
+        <div class="p-5">
+            <h1 id="why" class="text-4xl text-center pt-5 pb-2">
+                Why this?
+            </h1>
+            <div class="text-base my-5 md:mx-20">
+                <p>
+                    12ft.io is a popular website for unlocking paywalled articles. 
+                    It is a great service and I use it a lot. But, I am lazy 
+                    and I don't like typing the whole URL. So, I made this chrome
+                     extension to redirect me to the 12ft ladder.
+                </p>
+                <p>
+                    It is open source and you can find the source code on <a href="https://github.com/newtoallofthis123/12ft_redirect" class="underline">
+                        <i class="bi bi-github"></i> GitHub
+                    </a>
+                    You can actually just check it out. It is written in just 20 lines of code.
+                    Yep. That's it. 20 lines of code.
+                </p>
+                <p>
+                    I am a beginner in web development and I am learning a lot of new things.
+                    I am also learning how to write good code. So, if you have any suggestions
+                    or feedback, please let me know.
+                </p>
+            </div>
+            <h1 class="text-4xl text-center pt-3 pb-2">
+                Not on Chrome WebStore?
+            </h1>
+            <div class="text-base my-5 md:mx-20">
+                <p>
+                    Yes. For now, this extension, even though it is chrome extension, is not on the Chrome WebStore.
+                    I am planning to put it on the Chrome WebStore. But, I am not sure if I will do it.
+                
+                    This is because of two reasons. First, I don't know if it violates any of the Chrome WebStore policies.
+                    If it does, I will have to make some changes to the extension. Second, I don't know if it is worth the
+                    effort. I mean, it is just a 20 line code.
+                </p>
+                <p>
+                    So, for now, you can download the extension from the GitHub repository. I have provided the link below.
+                    If you want to install it, you can follow the instructions below
+                </p>
+            </div>
+            <div class="text-center p-2">
+                <button class="bg-black text-lg text-white rounded-md p-2 text-center">
+                    <a href="https://github.com/newtoallofthis123/12ft_redirect/releases">
+                        Download on GitHub
+                    </a>
+                </button>
+            </div>
+        </div>
+        <h1 class="text-4xl text-center pt-3 pb-2">
+            How to install?
+        </h1>
+        <div class="text-base my-5 md:mx-20">
+            <p>
+                Installing this extension is very easy. Just follow the steps below.
+            </p>
+            <ol class="list-decimal py-4">
+                <li>
+                    Download the extension crx from the GitHub repository. You can find the link above.
+                </li>
+                <li>
+                    Open the Chrome browser and go to the extensions page. You can do this by typing <code>chrome://extensions</code> in the address bar.
+                </li>
+                <li>
+                    Just drag and drop the crx file into the extensions page.
+                </li>
+                <li>
+                    Click on the <code>Add Extension</code> button.
+                </li>
+                <li>
+                    That's it. You are done. You can now navigate to any website and click the extension icon to redirect to the 12ft ladder.
+                </li>
+            </ol>
+        </div>
+	</body>
+    <footer>
+        <div class="text-center p-5 text-lg border-t-2 border-black">
+            <p>
+                Made with <i class="bi bi-heart-fill text-red-500"></i> by <a href="https://noobscience.rocks" class="underline">NoobScience</a>
+            </p>
+        </div>
+    </footer>
+</html>
